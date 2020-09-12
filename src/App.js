@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
+import Navbar from "./components/Navbar";
+import BookingForm from './components/form/BookingForm';
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-datepicker/dist/react-datepicker.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-datepicker/dist/react-datepicker.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Navbar />
+
+        <Row className="booking-container">
+          <Col md={11} id="select-booking" >
+            <BookingForm />
+          </Col>
+        </Row>
+        <div className="footer" style={{ display: "flex", paddingLeft: "3rem", fontSize: ".75em", paddingTop: "15px", color: "#000000", fontWeight: 400 }}>
+          <p>© {new Date().getFullYear()} Anticafé. Tous droits réservés. </p>
+          <p> Mentions légales</p>
+          <p> - </p>
+          <p>Conditions générales de vente</p>
+        </div>
+      </>
+    )
+  }
 }
 
 export default App;
+
