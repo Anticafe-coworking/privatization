@@ -151,7 +151,7 @@ p{
 }
 
 .form-control-lg{
-  padding: .5rem 1rem;
+  /* padding: .5rem 1rem; */
   font-size: 16px !important;
   line-height: 1;
 }
@@ -167,7 +167,7 @@ p{
 .date{
   border-radius: 0;
   border: 1px solid #ced4da;
-  padding: .5rem 1rem;
+  /* padding: .5rem 1rem; */
   width: 100%;
 }
 
