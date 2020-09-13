@@ -92,7 +92,7 @@ class BookingForm extends Component {
                         <Form onSubmit={handleSubmit} autoComplete="off">
                             <Row style={{ padding: "2em 1em" }}>
 
-                                <Col xs={12} md={12} lg={5}>
+                                <Col xs={12} md={12} lg={4}>
                                     <Details id={id} booking={checkBooking} data={values.space} />
                                 </Col>
 
